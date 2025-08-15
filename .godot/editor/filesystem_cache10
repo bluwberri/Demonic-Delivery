@@ -1,0 +1,26 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1755269937
+icon.svg::CompressedTexture2D/CompressedTexture2D::714513242079053185::1755269310::1755269359::1::::<><><>0<>0<>9dccc329a545d163d4eb7397fd136193<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+::res://Assets/::1755269310
+::res://Assets/Player/::1755269359
+falling-ph.png::CompressedTexture2D/CompressedTexture2D::6667330222215243715::1755269310::1755269359::1::::<><><>0<>0<>9939de471caab3ac35e797957795c5ee<>res://.godot/imported/falling-ph.png-e4a76dc7d6a569b3b25406898e6dcff6.ctex::
+jumping-ph.png::CompressedTexture2D/CompressedTexture2D::2016631703136507988::1755269310::1755269359::1::::<><><>0<>0<>3f8ec425b340dcfb7b2d9cac341c56f2<>res://.godot/imported/jumping-ph.png-d3d14b301a2ba92950143bea3b89d1b1.ctex::
+knockback-ph.png::CompressedTexture2D/CompressedTexture2D::6537521925839760096::1755269310::1755269359::1::::<><><>0<>0<>bfc1765bcafe879a342d9486eab1ceb5<>res://.godot/imported/knockback-ph.png-c7c2dce4649a034f5345a67121a608be.ctex::
+running-ph.png::CompressedTexture2D/CompressedTexture2D::4406776385274431880::1755269310::1755269359::1::::<><><>0<>0<>80663a59430096468c7475c51eefb107<>res://.godot/imported/running-ph.png-4bad91e70958cdc79b27d516a2ca396b.ctex::
+standing-ph.png::CompressedTexture2D/CompressedTexture2D::661276028582123291::1755269310::1755269359::1::::<><><>0<>0<>30956fb136cf1e52ca13697f29c1be3b<>res://.godot/imported/standing-ph.png-ddcf63017e5134c221d65d571929f38f.ctex::
+wallsliding-ph.png::CompressedTexture2D/CompressedTexture2D::4880577207797776172::1755269310::1755269359::1::::<><><>0<>0<>43d89eebf6629fc6bebd991502b4c635<>res://.godot/imported/wallsliding-ph.png-272a8c2d7b84e1bfc67bb24b75b0bfc0.ctex::
+::res://runners-forever!/::1755269310
+::res://Scenes/::1755269360
+grassy.png::CompressedTexture2D/CompressedTexture2D::5364603268828236563::1755269310::1755269360::1::::<><><>0<>0<>216d5327ed748636e965a913af1cc22d<>res://.godot/imported/grassy.png-37e20d993378b738f5f32114c7ec962f.ctex::
+::res://Scenes/Block/::1755269310
+block.tscn::PackedScene/PackedScene::87512113173917740::1755269310::0::1::::<><><>0<>0<><>::res://icon.svg
+::res://Scenes/Grassy Hills/::1755269923
+grassy hills.png::CompressedTexture2D/CompressedTexture2D::7587133797941888655::1755269310::1755269359::1::::<><><>0<>0<>e37d732504c50dffebadf3496a0795f8<>res://.godot/imported/grassy hills.png-e584500da89bfea43596ac9bd276211f.ctex::
+grassy_hills.tres::TileSet::3835021579988634963::1755269923::0::1::::<><><>0<>0<><>::uid://dgdi8q3wcvngh::::res://Scenes/Grassy Hills/grassy hills.png
+grassy_hills.tscn::PackedScene::664093274715807208::1755269923::0::1::::<><><>0<>0<><>::uid://buvyilmfaiaox::::res://Scenes/Grassy Hills/grassy_hills.tres<>uid://x5a5nkorq7op::::res://Scenes/Player/player.tscn
+::res://Scenes/Main Game/::1755269923
+main_game.gd::GDScript/GDScript::2484615886337027325::1755269310::0::1::::<>Node2D<><>0<>0<><>::
+main_game.tscn::PackedScene::8787957566575965995::1755269923::0::1::::<><><>0<>0<><>::uid://bbnti4kiaqdwf::::res://Scenes/Main Game/main_game.gd<>uid://x5a5nkorq7op::::res://Scenes/Player/player.tscn
+::res://Scenes/Player/::1755269310
+player.gd::GDScript/GDScript::3582686998325850500::1755269310::0::1::::<>CharacterBody2D<><>0<>0<><>::
+player.tscn::PackedScene/PackedScene::1676329009024761019::1755269310::0::1::::<><><>0<>0<><>::uid://brbqljeltjqsi::::res://Scenes/Player/player.gd<>uid://jolech4gyvf4::::res://Assets/Player/standing-ph.png<>uid://3y4vnysln1em::::res://Assets/Player/jumping-ph.png<>uid://c18x7ptufsg5p::::res://Assets/Player/falling-ph.png<>uid://c0e3bb2oto7ng::::res://Assets/Player/knockback-ph.png<>uid://b31w70qxor5no::::res://Assets/Player/running-ph.png<>uid://cbsgnm7eurupw::::res://Assets/Player/wallsliding-ph.png
