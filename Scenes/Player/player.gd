@@ -29,8 +29,10 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	if curRunDir == -1:
 		wallCollider.rotation_degrees = 180
+		animation.flip_h = true
 	else:
 		wallCollider.rotation_degrees = 0
+		animation.flip_h = false
 	if is_on_floor():
 		curRunDir = 1
 		doubleJumpTimer.start()

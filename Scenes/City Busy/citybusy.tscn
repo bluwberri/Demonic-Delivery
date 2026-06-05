@@ -59,6 +59,7 @@ scroll_scale = Vector2(1, 0.01)
 repeat_size = Vector2(2560, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="Background/floor" unique_id=1580523920]
+modulate = Color(0.36779028, 0.5914341, 1, 1)
 texture = ExtResource("3_4s14a")
 centered = false
 

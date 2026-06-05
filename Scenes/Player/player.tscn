@@ -145,8 +145,10 @@ grow_vertical = 2
 
 [node name="TextureProgressBar" type="TextureProgressBar" parent="CanvasLayer/UI" unique_id=471517620]
 layout_mode = 1
-offset_right = 6000.0
-offset_bottom = 6000.0
+offset_left = 45.0
+offset_top = 45.0
+offset_right = 6045.0
+offset_bottom = 6045.0
 scale = Vector2(0.06, 0.06)
 max_value = 5.0
 value = 5.0
