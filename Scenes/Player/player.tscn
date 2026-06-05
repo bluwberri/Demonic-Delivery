@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://x5a5nkorq7op"]
+[gd_scene format=3 uid="uid://x5a5nkorq7op"]
 
 [ext_resource type="Script" uid="uid://brbqljeltjqsi" path="res://Scenes/Player/player.gd" id="1_a3d8c"]
 [ext_resource type="Texture2D" uid="uid://jolech4gyvf4" path="res://Assets/Player/standing-ph.png" id="2_a3d8c"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://c0e3bb2oto7ng" path="res://Assets/Player/knockback-ph.png" id="5_0u5uq"]
 [ext_resource type="Texture2D" uid="uid://b31w70qxor5no" path="res://Assets/Player/running-ph.png" id="5_jlvik"]
 [ext_resource type="Texture2D" uid="uid://cbsgnm7eurupw" path="res://Assets/Player/wallsliding-ph.png" id="6_gk6dx"]
+[ext_resource type="Texture2D" uid="uid://dov0kmccuj1o6" path="res://Assets/Player/circle_PNG4.png" id="8_jlvik"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jhyir"]
 atlas = ExtResource("3_0u5uq")
@@ -96,36 +97,62 @@ animations = [{
 size = Vector2(70, 138)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_a3d8c"]
-size = Vector2(3.25, 109)
+size = Vector2(3.25, 130.75)
 
-[node name="Player" type="CharacterBody2D" node_paths=PackedStringArray("knockbacktimer", "wallColider", "animation")]
+[node name="Player" type="CharacterBody2D" unique_id=64591432 node_paths=PackedStringArray("knockbacktimer", "wallCollider", "animation", "doubleJumpTimer", "healthBar")]
 script = ExtResource("1_a3d8c")
 knockbacktimer = NodePath("knockback")
-wallColider = NodePath("WallColider")
+wallCollider = NodePath("WallColider")
 animation = NodePath("Sprite2D")
+doubleJumpTimer = NodePath("doublejump")
+healthBar = NodePath("CanvasLayer/UI/TextureProgressBar")
 
-[node name="Sprite2D" type="AnimatedSprite2D" parent="."]
+[node name="Sprite2D" type="AnimatedSprite2D" parent="." unique_id=1581145445]
 position = Vector2(2, 5)
 scale = Vector2(1.15325, 1.43)
 sprite_frames = SubResource("SpriteFrames_htcer")
-animation = &"idle"
+animation = &"running"
 
-[node name="PlayerCollision" type="CollisionShape2D" parent="."]
+[node name="PlayerCollision" type="CollisionShape2D" parent="." unique_id=849162071]
 shape = SubResource("RectangleShape2D_xpcdj")
 
-[node name="WallColider" type="Area2D" parent="."]
+[node name="WallColider" type="Area2D" parent="." unique_id=242925240]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="WallColider"]
-position = Vector2(37.375, 1)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WallColider" unique_id=1891732571]
+position = Vector2(37.375, -2.625)
 shape = SubResource("RectangleShape2D_a3d8c")
 
-[node name="knockback" type="Timer" parent="."]
-wait_time = 0.4
+[node name="knockback" type="Timer" parent="." unique_id=752448427]
 one_shot = true
 
-[node name="Camera2D" type="Camera2D" parent="."]
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1933606562]
+offset = Vector2(930, -200)
 position_smoothing_enabled = true
+
+[node name="doublejump" type="Timer" parent="." unique_id=1517130088]
+wait_time = 0.1
+one_shot = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=574658368]
+
+[node name="UI" type="Control" parent="CanvasLayer" unique_id=783380481]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="CanvasLayer/UI" unique_id=471517620]
+layout_mode = 1
+offset_right = 6000.0
+offset_bottom = 6000.0
+scale = Vector2(0.06, 0.06)
+max_value = 5.0
+value = 5.0
+fill_mode = 5
+texture_progress = ExtResource("8_jlvik")
 
 [connection signal="body_entered" from="WallColider" to="." method="_on_wall_colider_body_entered"]
 [connection signal="body_exited" from="WallColider" to="." method="_on_wall_colider_body_exited"]
-[connection signal="timeout" from="knockback" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="knockback" to="." method="_on_knockback_timeout"]
