@@ -1,15 +1,15 @@
 [gd_scene format=3 uid="uid://qmgxqxmru0w4"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_mk8hl"]
-font_size = 74
+font_size = 40
 font_color = Color(0, 0, 0, 1)
 
 [node name="LevelCard" type="Control" unique_id=736693259]
-custom_minimum_size = Vector2(620, 675)
+custom_minimum_size = Vector2(300, 310)
 layout_mode = 3
 anchors_preset = 0
-offset_right = 620.0
-offset_bottom = 675.0
+offset_right = 300.0
+offset_bottom = 310.0
 
 [node name="Background" type="ColorRect" parent="." unique_id=953049764]
 layout_mode = 1
@@ -28,7 +28,7 @@ anchor_right = 0.9724919
 anchor_bottom = 0.9792285
 grow_horizontal = 2
 grow_vertical = 0
-theme_override_font_sizes/font_size = 61
+theme_override_font_sizes/font_size = 30
 text = "PLAY LEVEL"
 metadata/_edit_use_anchors_ = true
 
@@ -39,10 +39,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -250.0
-offset_top = -220.0
-offset_right = 250.0
-offset_bottom = 220.0
+offset_left = -118.0
+offset_top = -88.0
+offset_right = 118.0
+offset_bottom = 88.0
 grow_horizontal = 2
 grow_vertical = 2
 expand_mode = 2

@@ -138,7 +138,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_jincj")
 }],
-"loop": false,
+"loop": 0,
 "name": &"doublejump",
 "speed": 12.0
 }, {
@@ -146,7 +146,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_jhyir")
 }],
-"loop": true,
+"loop": 1,
 "name": &"falling",
 "speed": 5.0
 }, {
@@ -157,7 +157,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_mtuoh")
 }],
-"loop": true,
+"loop": 1,
 "name": &"idle",
 "speed": 5.0
 }, {
@@ -165,7 +165,7 @@ animations = [{
 "duration": 2.0,
 "texture": ExtResource("2_dd0ac")
 }],
-"loop": true,
+"loop": 1,
 "name": &"jumping",
 "speed": 5.0
 }, {
@@ -179,7 +179,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_ythyg")
 }],
-"loop": true,
+"loop": 1,
 "name": &"knockback",
 "speed": 12.0
 }, {
@@ -202,7 +202,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_7g0yx")
 }],
-"loop": true,
+"loop": 1,
 "name": &"running",
 "speed": 12.0
 }, {
@@ -210,7 +210,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_bmb2s")
 }],
-"loop": true,
+"loop": 1,
 "name": &"victory",
 "speed": 5.0
 }, {
@@ -218,7 +218,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("6_gk6dx")
 }],
-"loop": true,
+"loop": 1,
 "name": &"wallsliding",
 "speed": 5.0
 }]
@@ -289,6 +289,7 @@ one_shot = true
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1933606562]
 offset = Vector2(930, -200)
+zoom = Vector2(0.5, 0.5)
 position_smoothing_enabled = true
 
 [node name="doublejump" type="Timer" parent="." unique_id=1517130088]
@@ -311,6 +312,7 @@ offset_left = 45.0
 offset_top = 45.0
 offset_right = 405.0
 offset_bottom = 405.0
+scale = Vector2(0.5, 0.5)
 max_value = 5.0
 step = 0.01
 value = 5.0
@@ -334,12 +336,13 @@ layout_mode = 1
 anchors_preset = 2
 anchor_top = 1.0
 anchor_bottom = 1.0
-offset_left = -115.999985
-offset_top = -413.99988
-offset_right = 524.0
-offset_bottom = 226.00012
+offset_left = -56.0
+offset_top = -273.99997
+offset_right = 584.0
+offset_bottom = 366.0
 grow_vertical = 0
 rotation = 0.12822624
+scale = Vector2(0.5, 0.5)
 texture = ExtResource("12_7g0yx")
 stretch_mode = 4
 

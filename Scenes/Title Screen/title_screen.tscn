@@ -181,31 +181,31 @@ tracks/12/keys = {
 tracks/13/type = "value"
 tracks/13/imported = false
 tracks/13/enabled = true
-tracks/13/path = NodePath("background/body:size")
+tracks/13/path = NodePath("background/body/head/hat:position")
 tracks/13/interp = 1
 tracks/13/loop_wrap = true
 tracks/13/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(2560, 1440.0039)]
+"values": [Vector2(0, 0)]
 }
 tracks/14/type = "value"
 tracks/14/imported = false
 tracks/14/enabled = true
-tracks/14/path = NodePath("background/body/head:size")
+tracks/14/path = NodePath("background/body/head/hat:rotation")
 tracks/14/interp = 1
 tracks/14/loop_wrap = true
 tracks/14/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(2560, 1440.0037)]
+"values": [0.0]
 }
 tracks/15/type = "value"
 tracks/15/imported = false
 tracks/15/enabled = true
-tracks/15/path = NodePath("background/body/head/hat:position")
+tracks/15/path = NodePath("background/body/head/face:position")
 tracks/15/interp = 1
 tracks/15/loop_wrap = true
 tracks/15/keys = {
@@ -217,7 +217,7 @@ tracks/15/keys = {
 tracks/16/type = "value"
 tracks/16/imported = false
 tracks/16/enabled = true
-tracks/16/path = NodePath("background/body/head/hat:rotation")
+tracks/16/path = NodePath("background/body/head/face:rotation")
 tracks/16/interp = 1
 tracks/16/loop_wrap = true
 tracks/16/keys = {
@@ -229,82 +229,22 @@ tracks/16/keys = {
 tracks/17/type = "value"
 tracks/17/imported = false
 tracks/17/enabled = true
-tracks/17/path = NodePath("background/body/head/hat:size")
+tracks/17/path = NodePath("background/body/head/face:texture")
 tracks/17/interp = 1
 tracks/17/loop_wrap = true
 tracks/17/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(2560, 1440)]
+"update": 1,
+"values": [ExtResource("8_s65m5")]
 }
 tracks/18/type = "value"
 tracks/18/imported = false
 tracks/18/enabled = true
-tracks/18/path = NodePath("background/body/head/face:position")
+tracks/18/path = NodePath("background/body/head/face:scale")
 tracks/18/interp = 1
 tracks/18/loop_wrap = true
 tracks/18/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(0, 0)]
-}
-tracks/19/type = "value"
-tracks/19/imported = false
-tracks/19/enabled = true
-tracks/19/path = NodePath("background/body/head/face:rotation")
-tracks/19/interp = 1
-tracks/19/loop_wrap = true
-tracks/19/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [0.0]
-}
-tracks/20/type = "value"
-tracks/20/imported = false
-tracks/20/enabled = true
-tracks/20/path = NodePath("background/body/head/face:size")
-tracks/20/interp = 1
-tracks/20/loop_wrap = true
-tracks/20/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(2560, 1440.0029)]
-}
-tracks/21/type = "value"
-tracks/21/imported = false
-tracks/21/enabled = true
-tracks/21/path = NodePath("background/body/arm:size")
-tracks/21/interp = 1
-tracks/21/loop_wrap = true
-tracks/21/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(2560, 1440.0037)]
-}
-tracks/22/type = "value"
-tracks/22/imported = false
-tracks/22/enabled = true
-tracks/22/path = NodePath("background/body/head/face:texture")
-tracks/22/interp = 1
-tracks/22/loop_wrap = true
-tracks/22/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [ExtResource("8_s65m5")]
-}
-tracks/23/type = "value"
-tracks/23/imported = false
-tracks/23/enabled = true
-tracks/23/path = NodePath("background/body/head/face:scale")
-tracks/23/interp = 1
-tracks/23/loop_wrap = true
-tracks/23/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
@@ -722,16 +662,16 @@ metadata/_edit_use_anchors_ = true
 
 [node name="background" type="TextureRect" parent="." unique_id=434089546]
 layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
+anchors_preset = -1
+anchor_left = -0.31953126
+anchor_right = 0.68046874
 anchor_bottom = 1.0
-offset_left = -496.0
-offset_right = -496.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = SubResource("CompressedTexture2D_fdtxu")
 expand_mode = 1
 stretch_mode = 5
+metadata/_edit_use_anchors_ = true
 
 [node name="sun" type="TextureRect" parent="background" unique_id=125919218]
 layout_mode = 1
@@ -745,6 +685,7 @@ pivot_offset_ratio = Vector2(0.5, 0.821)
 texture = ExtResource("2_20n3g")
 expand_mode = 1
 stretch_mode = 5
+metadata/_edit_use_anchors_ = true
 
 [node name="cloud" type="TextureRect" parent="background" unique_id=489672028]
 layout_mode = 1
@@ -758,6 +699,7 @@ pivot_offset_ratio = Vector2(0.5, 0.5)
 texture = ExtResource("3_s65m5")
 expand_mode = 1
 stretch_mode = 5
+metadata/_edit_use_anchors_ = true
 
 [node name="pizzabox" type="TextureRect" parent="background" unique_id=649787184]
 layout_mode = 1
@@ -771,19 +713,20 @@ pivot_offset_ratio = Vector2(0.403, 0.702)
 texture = ExtResource("5_6wh8n")
 expand_mode = 1
 stretch_mode = 5
+metadata/_edit_use_anchors_ = true
 
 [node name="body" type="TextureRect" parent="background" unique_id=917529951]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_bottom = 0.00390625
 grow_horizontal = 2
 grow_vertical = 2
 pivot_offset_ratio = Vector2(0.738, 0.948)
 texture = ExtResource("4_nd8ij")
 expand_mode = 1
 stretch_mode = 5
+metadata/_edit_use_anchors_ = true
 
 [node name="head" type="TextureRect" parent="background/body" unique_id=789236545]
 layout_mode = 1
@@ -797,6 +740,7 @@ pivot_offset_ratio = Vector2(0.714, 0.654)
 texture = ExtResource("7_ye11m")
 expand_mode = 1
 stretch_mode = 5
+metadata/_edit_use_anchors_ = true
 
 [node name="hat" type="TextureRect" parent="background/body/head" unique_id=209524244]
 layout_mode = 1
@@ -809,6 +753,7 @@ grow_vertical = 2
 texture = ExtResource("8_wt8t8")
 expand_mode = 1
 stretch_mode = 5
+metadata/_edit_use_anchors_ = true
 
 [node name="face" type="TextureRect" parent="background/body/head" unique_id=1146646889]
 layout_mode = 1
@@ -821,6 +766,7 @@ grow_vertical = 2
 texture = ExtResource("8_s65m5")
 expand_mode = 1
 stretch_mode = 5
+metadata/_edit_use_anchors_ = true
 
 [node name="arm" type="TextureRect" parent="background/body" unique_id=177551407]
 layout_mode = 1
@@ -834,6 +780,7 @@ pivot_offset_ratio = Vector2(0.76, 0.81)
 texture = ExtResource("6_hxuq1")
 expand_mode = 1
 stretch_mode = 5
+metadata/_edit_use_anchors_ = true
 
 [node name="ColorRect2" type="ColorRect" parent="." unique_id=1933359301]
 layout_mode = 1
@@ -851,10 +798,10 @@ layout_mode = 1
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
-offset_left = -970.0
-offset_top = -91.0
-offset_right = -44.0
-offset_bottom = 835.0
+offset_left = -479.0
+offset_top = -41.0
+offset_right = -17.0
+offset_bottom = 421.0
 grow_horizontal = 0
 texture = ExtResource("2_5dsjl")
 expand_mode = 1
@@ -866,12 +813,13 @@ anchor_left = 1.0
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-offset_left = -906.0
-offset_top = -69.0
-offset_right = -106.0
-offset_bottom = 117.0
+offset_left = -425.0
+offset_top = -11.0
+offset_right = 374.99963
+offset_bottom = 175.0
 grow_horizontal = 0
 grow_vertical = 2
+scale = Vector2(0.45096105, 0.45096105)
 texture_normal = ExtResource("1_2mq87")
 stretch_mode = 0
 
@@ -899,12 +847,13 @@ anchor_left = 1.0
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-offset_left = -906.0
-offset_top = 444.0
-offset_right = -106.0
-offset_bottom = 630.0
+offset_left = -425.0
+offset_top = 247.0
+offset_right = 374.99963
+offset_bottom = 433.0
 grow_horizontal = 0
 grow_vertical = 2
+scale = Vector2(0.45096105, 0.45096105)
 texture_normal = ExtResource("1_2mq87")
 stretch_mode = 0
 
@@ -931,12 +880,13 @@ anchor_left = 1.0
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-offset_left = -906.0
-offset_top = 185.0
-offset_right = -106.0
-offset_bottom = 371.0
+offset_left = -425.0
+offset_top = 118.99988
+offset_right = 374.99963
+offset_bottom = 305.0
 grow_horizontal = 0
 grow_vertical = 2
+scale = Vector2(0.45096105, 0.45096105)
 texture_normal = ExtResource("1_2mq87")
 stretch_mode = 0
 
@@ -965,7 +915,6 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.1764706, 0, 0.0627451, 1)
-metadata/_edit_use_anchors_ = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1439330876]
 libraries/ = SubResource("AnimationLibrary_nd8ij")

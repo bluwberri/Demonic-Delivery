@@ -1,0 +1,7 @@
+res://Scenes/Player/player.tscn
+res://Scenes/City Busy/citybusy.tres
+res://Scenes/NPC/npc.gdshader
+res://Scenes/Training Video/training_tiles.tres
+res://Scenes/Title Screen/title_screen.tscn
+res://Scenes/Level Select/play_menu.tscn
+res://Scenes/Level Select/level_card.tscn
