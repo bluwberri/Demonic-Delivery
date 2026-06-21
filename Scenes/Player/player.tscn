@@ -3,11 +3,58 @@
 [ext_resource type="Script" uid="uid://brbqljeltjqsi" path="res://Scenes/Player/player.gd" id="1_a3d8c"]
 [ext_resource type="Texture2D" uid="uid://jolech4gyvf4" path="res://Assets/Player/standing-ph.png" id="2_a3d8c"]
 [ext_resource type="Texture2D" uid="uid://3y4vnysln1em" path="res://Assets/Player/jumping-ph.png" id="2_dd0ac"]
+[ext_resource type="Texture2D" uid="uid://buxxyah3iw65n" path="res://Assets/Player/doublejump.png" id="2_gk6dx"]
 [ext_resource type="Texture2D" uid="uid://c18x7ptufsg5p" path="res://Assets/Player/falling-ph.png" id="3_0u5uq"]
 [ext_resource type="Texture2D" uid="uid://c0e3bb2oto7ng" path="res://Assets/Player/knockback-ph.png" id="5_0u5uq"]
 [ext_resource type="Texture2D" uid="uid://b31w70qxor5no" path="res://Assets/Player/running-ph.png" id="5_jlvik"]
 [ext_resource type="Texture2D" uid="uid://cbsgnm7eurupw" path="res://Assets/Player/wallsliding-ph.png" id="6_gk6dx"]
+[ext_resource type="Texture2D" uid="uid://6b0k3ssq185r" path="res://Assets/Player/victory-ph.png" id="8_jhyir"]
 [ext_resource type="Texture2D" uid="uid://dov0kmccuj1o6" path="res://Assets/Player/circle_PNG4.png" id="8_jlvik"]
+[ext_resource type="Texture2D" uid="uid://y6f0go8rcqa6" path="res://Assets/Player/boxUnder.png" id="10_74mp2"]
+[ext_resource type="Texture2D" uid="uid://ouei42fuo6h7" path="res://Assets/Player/speedometer.png" id="12_7g0yx"]
+[ext_resource type="AudioStream" uid="uid://dudy23shr2sge" path="res://Assets/Sound/Player/Roblox Old Jumping Sound.mp3" id="12_oikmp"]
+[ext_resource type="FontFile" uid="uid://dftstw66w4wjj" path="res://Assets/Player/DS-DIGII.TTF" id="13_dey5f"]
+[ext_resource type="Texture2D" uid="uid://bgl0kreygdmjw" path="res://Assets/Player/Particles/firey.png" id="15_dey5f"]
+[ext_resource type="Material" uid="uid://bxo6cvmpvpss6" path="res://Particle Settings/fire.tres" id="16_r5xpd"]
+[ext_resource type="Texture2D" uid="uid://dkoxo2erqnqd5" path="res://Assets/Player/Particles/Untitled243_20260617191400.png" id="17_hnuln"]
+[ext_resource type="Material" uid="uid://b54ef0bgnfmm1" path="res://Particle Settings/smoke.tres" id="18_aqm4k"]
+[ext_resource type="Texture2D" uid="uid://1x37y4mghhe2" path="res://Assets/Player/Particles/jump-effect.png" id="19_aqm4k"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dey5f"]
+atlas = ExtResource("2_gk6dx")
+region = Rect2(0, 0, 640, 640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r5xpd"]
+atlas = ExtResource("2_gk6dx")
+region = Rect2(640, 0, 640, 640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ks1b7"]
+atlas = ExtResource("2_gk6dx")
+region = Rect2(1280, 0, 640, 640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hnuln"]
+atlas = ExtResource("2_gk6dx")
+region = Rect2(1920, 0, 640, 640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aqm4k"]
+atlas = ExtResource("2_gk6dx")
+region = Rect2(2560, 0, 640, 640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rcvs5"]
+atlas = ExtResource("2_gk6dx")
+region = Rect2(3200, 0, 640, 640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h8ma5"]
+atlas = ExtResource("2_gk6dx")
+region = Rect2(3840, 0, 640, 640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eksi1"]
+atlas = ExtResource("2_gk6dx")
+region = Rect2(4480, 0, 640, 640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jincj"]
+atlas = ExtResource("2_gk6dx")
+region = Rect2(5120, 0, 640, 640)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jhyir"]
 atlas = ExtResource("3_0u5uq")
@@ -21,20 +68,80 @@ region = Rect2(0, 0, 100, 100)
 atlas = ExtResource("2_a3d8c")
 region = Rect2(0, 100, 100, 100)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_rqdc0"]
+atlas = ExtResource("5_0u5uq")
+region = Rect2(0, 0, 640, 640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qr1w5"]
+atlas = ExtResource("5_0u5uq")
+region = Rect2(640, 0, 640, 640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ythyg"]
+atlas = ExtResource("5_0u5uq")
+region = Rect2(1280, 0, 640, 640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jlvik"]
+atlas = ExtResource("5_jlvik")
+region = Rect2(0, 0, 640, 640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gk6dx"]
+atlas = ExtResource("5_jlvik")
+region = Rect2(640, 0, 640, 640)
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_74mp2"]
 atlas = ExtResource("5_jlvik")
-region = Rect2(0, 0, 100, 100)
+region = Rect2(1280, 0, 640, 640)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_oikmp"]
 atlas = ExtResource("5_jlvik")
-region = Rect2(100, 0, 100, 100)
+region = Rect2(1920, 0, 640, 640)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_06tpx"]
 atlas = ExtResource("5_jlvik")
-region = Rect2(0, 100, 100, 100)
+region = Rect2(2560, 0, 640, 640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7g0yx"]
+atlas = ExtResource("5_jlvik")
+region = Rect2(3200, 0, 640, 640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bmb2s"]
+atlas = ExtResource("8_jhyir")
+region = Rect2(0, 0, 640, 640)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_htcer"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dey5f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r5xpd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ks1b7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hnuln")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aqm4k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rcvs5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h8ma5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eksi1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jincj")
+}],
+"loop": false,
+"name": &"doublejump",
+"speed": 12.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_jhyir")
@@ -64,13 +171,25 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("5_0u5uq")
+"texture": SubResource("AtlasTexture_rqdc0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qr1w5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ythyg")
 }],
 "loop": true,
 "name": &"knockback",
-"speed": 5.0
+"speed": 12.0
 }, {
 "frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jlvik")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gk6dx")
+}, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_74mp2")
 }, {
@@ -79,10 +198,21 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_06tpx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7g0yx")
 }],
 "loop": true,
 "name": &"running",
-"speed": 10.0
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bmb2s")
+}],
+"loop": true,
+"name": &"victory",
+"speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -96,31 +226,63 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xpcdj"]
 size = Vector2(70, 138)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_a3d8c"]
-size = Vector2(3.25, 130.75)
+[sub_resource type="LabelSettings" id="LabelSettings_gk6dx"]
+font = ExtResource("13_dey5f")
+font_size = 87
+font_color = Color(0, 0, 0, 0.61960787)
+outline_size = 5
+outline_color = Color(0, 0, 0, 0.61960787)
 
-[node name="Player" type="CharacterBody2D" unique_id=64591432 node_paths=PackedStringArray("knockbacktimer", "wallCollider", "animation", "doubleJumpTimer", "healthBar")]
+[sub_resource type="LabelSettings" id="LabelSettings_7g0yx"]
+font = ExtResource("13_dey5f")
+font_size = 40
+font_color = Color(0, 0, 0, 0.61960787)
+outline_size = 5
+outline_color = Color(0, 0, 0, 0.61960787)
+
+[sub_resource type="LabelSettings" id="LabelSettings_oikmp"]
+font_size = 75
+
+[sub_resource type="LabelSettings" id="LabelSettings_06tpx"]
+font_size = 131
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gk6dx"]
+size = Vector2(274.047, 390)
+
+[sub_resource type="Curve" id="Curve_rcvs5"]
+_data = [Vector2(0.046762586, 0.042822003), 0.0, 7.1862984, 0, 0, Vector2(0.176259, 0.8478127), 0.4340258, 0.4340258, 0, 0, Vector2(0.9928057, 1), 0.09681472, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="CurveTexture" id="CurveTexture_aqm4k"]
+curve = SubResource("Curve_rcvs5")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_rcvs5"]
+particle_flag_disable_z = true
+direction = Vector3(54.18, 0, 0)
+gravity = Vector3(0, 0, 0)
+scale_min = 2.5
+scale_max = 2.5
+scale_curve = SubResource("CurveTexture_aqm4k")
+
+[node name="Player" type="CharacterBody2D" unique_id=64591432 node_paths=PackedStringArray("knockbacktimer", "animation", "doubleJumpTimer", "healthBar", "WallCollider", "camera")]
+collision_layer = 2
+collision_mask = 7
 script = ExtResource("1_a3d8c")
 knockbacktimer = NodePath("knockback")
-wallCollider = NodePath("WallColider")
 animation = NodePath("Sprite2D")
 doubleJumpTimer = NodePath("doublejump")
 healthBar = NodePath("CanvasLayer/UI/TextureProgressBar")
+WallCollider = NodePath("Area2D")
+camera = NodePath("Camera2D")
 
 [node name="Sprite2D" type="AnimatedSprite2D" parent="." unique_id=1581145445]
-position = Vector2(2, 5)
-scale = Vector2(1.15325, 1.43)
+position = Vector2(-6, 20)
+scale = Vector2(0.29921874, 0.29921874)
 sprite_frames = SubResource("SpriteFrames_htcer")
-animation = &"running"
+animation = &"victory"
 
 [node name="PlayerCollision" type="CollisionShape2D" parent="." unique_id=849162071]
 shape = SubResource("RectangleShape2D_xpcdj")
-
-[node name="WallColider" type="Area2D" parent="." unique_id=242925240]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="WallColider" unique_id=1891732571]
-position = Vector2(37.375, -2.625)
-shape = SubResource("RectangleShape2D_a3d8c")
 
 [node name="knockback" type="Timer" parent="." unique_id=752448427]
 one_shot = true
@@ -147,14 +309,198 @@ grow_vertical = 2
 layout_mode = 1
 offset_left = 45.0
 offset_top = 45.0
-offset_right = 6045.0
-offset_bottom = 6045.0
-scale = Vector2(0.06, 0.06)
+offset_right = 405.0
+offset_bottom = 405.0
 max_value = 5.0
+step = 0.01
 value = 5.0
 fill_mode = 5
+texture_under = ExtResource("10_74mp2")
 texture_progress = ExtResource("8_jlvik")
 
-[connection signal="body_entered" from="WallColider" to="." method="_on_wall_colider_body_entered"]
-[connection signal="body_exited" from="WallColider" to="." method="_on_wall_colider_body_exited"]
+[node name="Label2" type="Label" parent="CanvasLayer/UI" unique_id=1935742477]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -173.0
+offset_bottom = 167.0
+grow_horizontal = 0
+theme_override_font_sizes/font_size = 122
+text = "0.0"
+
+[node name="Speedometer" type="TextureRect" parent="CanvasLayer/UI" unique_id=34719088]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = -115.999985
+offset_top = -413.99988
+offset_right = 524.0
+offset_bottom = 226.00012
+grow_vertical = 0
+rotation = 0.12822624
+texture = ExtResource("12_7g0yx")
+stretch_mode = 4
+
+[node name="Label" type="Label" parent="CanvasLayer/UI/Speedometer" unique_id=1404202674]
+layout_mode = 0
+anchor_left = 0.353125
+anchor_top = 0.134375
+anchor_right = 0.6453125
+anchor_bottom = 0.41875
+text = "1000"
+label_settings = SubResource("LabelSettings_gk6dx")
+horizontal_alignment = 2
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Label2" type="Label" parent="CanvasLayer/UI/Speedometer" unique_id=1162425078]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.34625015
+anchor_top = 0.22948202
+anchor_right = 0.6384376
+anchor_bottom = 0.513857
+text = "MPH"
+label_settings = SubResource("LabelSettings_7g0yx")
+horizontal_alignment = 2
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="FinishScreen" type="Control" parent="CanvasLayer" unique_id=530192300]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CoverGameplay" type="ColorRect" parent="CanvasLayer/FinishScreen" unique_id=1647530084]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0)
+
+[node name="Background" type="ColorRect" parent="CanvasLayer/FinishScreen" unique_id=34235712]
+layout_mode = 1
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 1098.0
+grow_horizontal = 0
+grow_vertical = 2
+color = Color(0.24313726, 0, 0, 1)
+
+[node name="Finished" type="Label" parent="CanvasLayer/FinishScreen/Background" unique_id=2123920881]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -980.0
+offset_top = 62.0
+offset_right = -136.0
+offset_bottom = 303.0
+grow_horizontal = 0
+theme_override_font_sizes/font_size = 176
+text = "FINISHED!"
+
+[node name="DMG" type="Label" parent="CanvasLayer/FinishScreen/Background" unique_id=960760485]
+layout_mode = 0
+offset_left = 71.0
+offset_top = 394.0
+offset_right = 703.0
+offset_bottom = 507.0
+theme_override_font_sizes/font_size = 82
+text = "Damage Taken :"
+
+[node name="Time" type="Label" parent="CanvasLayer/FinishScreen/Background" unique_id=1015649711]
+layout_mode = 0
+offset_left = 77.0
+offset_top = 541.0
+offset_right = 295.0
+offset_bottom = 644.0
+text = "Time :"
+label_settings = SubResource("LabelSettings_oikmp")
+
+[node name="Overall" type="Label" parent="CanvasLayer/FinishScreen/Background" unique_id=511776890]
+layout_mode = 0
+offset_left = 280.0
+offset_top = 959.0
+offset_right = 804.0
+offset_bottom = 1322.0
+text = "Overall :
+5 / 5"
+label_settings = SubResource("LabelSettings_06tpx")
+horizontal_alignment = 1
+
+[node name="TransitionRect" type="ColorRect" parent="CanvasLayer" unique_id=1477273702]
+anchors_preset = -1
+anchor_left = 1.0
+anchor_right = 2.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.1764706, 0, 0.0627451, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="Area2D" type="Area2D" parent="." unique_id=300320376]
+scale = Vector2(0.29921874, 0.29921874)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1549928586]
+position = Vector2(1.2748858e-05, 0)
+shape = SubResource("RectangleShape2D_gk6dx")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=987261890]
+stream = ExtResource("12_oikmp")
+
+[node name="Fire" type="GPUParticles2D" parent="." unique_id=1502676443]
+position = Vector2(0, 70)
+emitting = false
+amount = 25
+texture = ExtResource("15_dey5f")
+lifetime = 0.5
+one_shot = true
+speed_scale = 2.0
+explosiveness = 1.0
+process_material = ExtResource("16_r5xpd")
+
+[node name="Smoke" type="GPUParticles2D" parent="." unique_id=1631273769]
+position = Vector2(0, 70)
+emitting = false
+texture = ExtResource("17_hnuln")
+process_material = ExtResource("18_aqm4k")
+
+[node name="JumpEffect" type="GPUParticles2D" parent="." unique_id=1722547911]
+modulate = Color(1, 0.3019608, 0, 0.4745098)
+position = Vector2(0, 61)
+emitting = false
+amount = 1
+texture = ExtResource("19_aqm4k")
+one_shot = true
+process_material = SubResource("ParticleProcessMaterial_rcvs5")
+
+[node name="WallJump" type="CPUParticles2D" parent="." unique_id=618077076]
+position = Vector2(-50, 0)
+emitting = false
+amount = 1
+texture = ExtResource("19_aqm4k")
+one_shot = true
+fixed_fps = 30
+draw_order = 1
+direction = Vector2(54.18, 0)
+gravity = Vector2(0, 0)
+angle_min = -90.0
+angle_max = -90.0
+scale_amount_min = 2.5
+scale_amount_max = 2.5
+scale_amount_curve = SubResource("Curve_rcvs5")
+
 [connection signal="timeout" from="knockback" to="." method="_on_knockback_timeout"]
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

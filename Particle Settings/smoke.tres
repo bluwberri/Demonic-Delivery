@@ -1,0 +1,10 @@
+[gd_resource type="ParticleProcessMaterial" format=3 uid="uid://b54ef0bgnfmm1"]
+
+[resource]
+lifetime_randomness = 1.0
+particle_flag_disable_z = true
+angle_min = -360.0
+angle_max = 360.00003
+gravity = Vector3(0, 98, 0)
+scale_min = 0.25
+scale_max = 0.5

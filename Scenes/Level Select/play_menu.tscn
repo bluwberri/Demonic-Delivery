@@ -1,0 +1,51 @@
+[gd_scene format=3 uid="uid://vgdy4hfm0xdb"]
+
+[ext_resource type="Script" uid="uid://bays1u1321xyq" path="res://Scenes/Level Select/play_menu.gd" id="1_mk8hl"]
+
+[node name="LevelSelect" type="Control" unique_id=1929803177]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_mk8hl")
+
+[node name="ScrollContainer" type="ScrollContainer" parent="." unique_id=161518297]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 220.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VFlowContainer" type="HFlowContainer" parent="ScrollContainer" unique_id=2032967666]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/h_separation = 225
+theme_override_constants/v_separation = 83
+alignment = 1
+
+[node name="Button" type="Button" parent="." unique_id=2129502011]
+layout_mode = 0
+anchor_right = 0.34101564
+anchor_bottom = 0.08472222
+offset_right = -631.0
+offset_bottom = -40.0
+theme_override_font_sizes/font_size = 83
+text = "<-- Back to Title Sreen"
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=175217424]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.1764706, 0, 0.0627451, 1)
+metadata/_edit_use_anchors_ = true
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

@@ -1,0 +1,94 @@
+[gd_scene format=3 uid="uid://clv4pnygbjyut"]
+
+[ext_resource type="Script" uid="uid://bs74s68026dmh" path="res://Scenes/Settings/settings.gd" id="1_ytwd3"]
+
+[node name="Settings" type="Control" unique_id=1760853708]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ytwd3")
+
+[node name="backtotitle" type="Button" parent="." unique_id=431079551]
+layout_mode = 1
+offset_right = 178.0
+offset_bottom = 31.0
+theme_override_font_sizes/font_size = 91
+text = "<- Back to Title Screen"
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1144898802]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 1.0
+anchor_right = 2.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.1764706, 0, 0.0627451, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="jump" type="Label" parent="." unique_id=1306882001]
+layout_mode = 0
+anchor_left = 0.21875
+anchor_top = 0.27430555
+anchor_right = 0.34375
+anchor_bottom = 0.3923611
+theme_override_font_sizes/font_size = 124
+text = "JUMP"
+metadata/_edit_use_anchors_ = true
+
+[node name="Button" type="Button" parent="jump" unique_id=1081585617]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 1.0235294
+anchor_right = 1.0
+anchor_bottom = 2.0235295
+grow_horizontal = 2
+grow_vertical = 2
+focus_mode = 0
+theme_override_font_sizes/font_size = 80
+text = "JUMP"
+metadata/_edit_use_anchors_ = true
+
+[node name="downslam" type="Label" parent="." unique_id=851865059]
+layout_mode = 0
+anchor_left = 0.5917969
+anchor_top = 0.27430555
+anchor_right = 0.87890625
+anchor_bottom = 0.3923611
+theme_override_font_sizes/font_size = 124
+text = "DOWNSLAM"
+metadata/_edit_use_anchors_ = true
+
+[node name="Button" type="Button" parent="downslam" unique_id=123911049]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 1.0235294
+anchor_right = 1.0
+anchor_bottom = 2.0235295
+grow_horizontal = 2
+grow_vertical = 2
+focus_mode = 0
+theme_override_font_sizes/font_size = 80
+text = "JUMP"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="." unique_id=2114040223]
+visible = false
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -23.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 116
+text = "Waiting for input..."
+horizontal_alignment = 1
+
+[connection signal="pressed" from="backtotitle" to="." method="_on_backtotitle_pressed"]
+[connection signal="pressed" from="jump/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="downslam/Button" to="." method="_on_dbutton_pressed"]

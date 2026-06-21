@@ -1,5 +1,715 @@
 [gd_scene format=3 uid="uid://cdv6yrivlknp8"]
 
+[ext_resource type="Texture2D" uid="uid://dyg61ufxqm822" path="res://Assets/Menu/menubutton.png" id="1_2mq87"]
+[ext_resource type="Script" uid="uid://b37tvta678pkn" path="res://Scenes/Title Screen/title_screen.gd" id="1_qvf3b"]
+[ext_resource type="Texture2D" uid="uid://dim3i1kkfn510" path="res://Assets/Menu/logo.png" id="2_5dsjl"]
+[ext_resource type="Texture2D" uid="uid://dfgaaoylffhoi" path="res://Assets/Menu/cover/Untitled244_20260618141714.png" id="2_20n3g"]
+[ext_resource type="Texture2D" uid="uid://ds0y38pwnjwvc" path="res://Assets/Menu/cover/Untitled244_20260618141720.png" id="3_s65m5"]
+[ext_resource type="Texture2D" uid="uid://bq4r3fbupk5om" path="res://Assets/Menu/cover/Untitled244_20260618141728.png" id="4_nd8ij"]
+[ext_resource type="Texture2D" uid="uid://bh742ynmvf5n7" path="res://Assets/Menu/cover/Untitled244_20260618141734.png" id="5_6wh8n"]
+[ext_resource type="Texture2D" uid="uid://xnplqgs82men" path="res://Assets/Menu/cover/Untitled244_20260618141741.png" id="6_hxuq1"]
+[ext_resource type="Texture2D" uid="uid://d1flofbkf3lmk" path="res://Assets/Menu/cover/Untitled244_20260618141911.png" id="7_ye11m"]
+[ext_resource type="Texture2D" uid="uid://dkcxnwg1rf3on" path="res://Assets/Menu/cover/Untitled244_20260618182052.png" id="8_s65m5"]
+[ext_resource type="Texture2D" uid="uid://bj2l75hqnxt5w" path="res://Assets/Menu/cover/Untitled244_20260618141757.png" id="8_wt8t8"]
+[ext_resource type="Texture2D" uid="uid://b17tjfgoqqqd7" path="res://Assets/Menu/cover/smiler.png" id="12_nd8ij"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_fdtxu"]
+load_path = "res://.godot/imported/Untitled244_20260618141708.png-da43f935005e6d8281271c999936fd33.ctex"
+
+[sub_resource type="LabelSettings" id="LabelSettings_5dsjl"]
+font_size = 70
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="Animation" id="Animation_20n3g"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("background/sun:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("background/sun:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("background/cloud:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("background/cloud:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("background/body:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("background/body:rotation")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("background/pizzabox:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("background/pizzabox:rotation")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("background/body/arm:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("background/body/arm:rotation")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("background/body/head:position")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("background/body/head:rotation")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("background/pizzabox:scale")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("background/body:size")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(2560, 1440.0039)]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("background/body/head:size")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(2560, 1440.0037)]
+}
+tracks/15/type = "value"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("background/body/head/hat:position")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/16/type = "value"
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/path = NodePath("background/body/head/hat:rotation")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/17/type = "value"
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/path = NodePath("background/body/head/hat:size")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(2560, 1440)]
+}
+tracks/18/type = "value"
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/path = NodePath("background/body/head/face:position")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/19/type = "value"
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/path = NodePath("background/body/head/face:rotation")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/20/type = "value"
+tracks/20/imported = false
+tracks/20/enabled = true
+tracks/20/path = NodePath("background/body/head/face:size")
+tracks/20/interp = 1
+tracks/20/loop_wrap = true
+tracks/20/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(2560, 1440.0029)]
+}
+tracks/21/type = "value"
+tracks/21/imported = false
+tracks/21/enabled = true
+tracks/21/path = NodePath("background/body/arm:size")
+tracks/21/interp = 1
+tracks/21/loop_wrap = true
+tracks/21/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(2560, 1440.0037)]
+}
+tracks/22/type = "value"
+tracks/22/imported = false
+tracks/22/enabled = true
+tracks/22/path = NodePath("background/body/head/face:texture")
+tracks/22/interp = 1
+tracks/22/loop_wrap = true
+tracks/22/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("8_s65m5")]
+}
+tracks/23/type = "value"
+tracks/23/imported = false
+tracks/23/enabled = true
+tracks/23/path = NodePath("background/body/head/face:scale")
+tracks/23/interp = 1
+tracks/23/loop_wrap = true
+tracks/23/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_6wh8n"]
+resource_name = "onplay"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("background/sun:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("background/sun:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("background/cloud:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("background/cloud:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("background/body:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("background/body:rotation")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("background/pizzabox:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(0.23325826, 0.24999996),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(-21.21, 25.53)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("background/pizzabox:rotation")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(0.24999996, 0.23325822),
+"update": 0,
+"values": [0.0, -0.11519173063162616]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("background/body/arm:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("background/body/arm:rotation")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(0.24999996, 1000000),
+"update": 0,
+"values": [0.0, -0.11519173063162616]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("background/body/head:position")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("background/body/head:rotation")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(0.28717446, 1),
+"update": 0,
+"values": [0.0, -0.2303834612632513]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("background/pizzabox:scale")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("background/body/head/face:texture")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("12_nd8ij")]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("background/body/head/face:position")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 75)]
+}
+tracks/15/type = "value"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("background/body/head/face:rotation")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"times": PackedFloat32Array(),
+"transitions": PackedFloat32Array(),
+"update": 0,
+"values": []
+}
+tracks/16/type = "value"
+tracks/16/imported = false
+tracks/16/enabled = false
+tracks/16/path = NodePath("background/body/head/face:size")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/keys = {
+"times": PackedFloat32Array(),
+"transitions": PackedFloat32Array(),
+"update": 0,
+"values": []
+}
+tracks/17/type = "value"
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/path = NodePath("background/body/head/face:scale")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/keys = {
+"times": PackedFloat32Array(),
+"transitions": PackedFloat32Array(),
+"update": 0,
+"values": []
+}
+
+[sub_resource type="Animation" id="Animation_s65m5"]
+resource_name = "onready"
+length = 2.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("background/sun:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2.5),
+"transitions": PackedFloat32Array(0.10881896, 1),
+"update": 0,
+"values": [Vector2(0, 903), Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("background/sun:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 2.5),
+"transitions": PackedFloat32Array(0.10881896, 1),
+"update": 0,
+"values": [0.0, 0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("background/cloud:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 2.5),
+"transitions": PackedFloat32Array(0.10881896, 1),
+"update": 0,
+"values": [Vector2(0, 903), Vector2(0, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("background/cloud:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 2.5),
+"transitions": PackedFloat32Array(0.10881896, 1),
+"update": 0,
+"values": [0.0, 0.0]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("background/body:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 2.5),
+"transitions": PackedFloat32Array(0.10881896, 1),
+"update": 0,
+"values": [Vector2(0, 903), Vector2(0, 0)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("background/body:rotation")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 2.5),
+"transitions": PackedFloat32Array(0.10881896, 1),
+"update": 0,
+"values": [0.0, 0.0]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("background/pizzabox:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 2.5),
+"transitions": PackedFloat32Array(0.10881896, 1),
+"update": 0,
+"values": [Vector2(0, 903), Vector2(0, 0)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("background/pizzabox:rotation")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0, 2.5),
+"transitions": PackedFloat32Array(0.10881896, 1),
+"update": 0,
+"values": [0.0, 0.0]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("background/body/arm:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0, 2.5),
+"transitions": PackedFloat32Array(0.10881896, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, 0)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("background/body/arm:rotation")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0, 2.5),
+"transitions": PackedFloat32Array(0.10881896, 1),
+"update": 0,
+"values": [0.0, 0.0]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("background/body/head:position")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0, 2.5),
+"transitions": PackedFloat32Array(0.10881896, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, 0)]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("background/body/head:rotation")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0, 2.5),
+"transitions": PackedFloat32Array(0.10881896, 1),
+"update": 0,
+"values": [0.0, 0.0]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("background/pizzabox:scale")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0, 2.5),
+"transitions": PackedFloat32Array(0.11662919, 1),
+"update": 0,
+"values": [Vector2(1, 0.33), Vector2(1, 1)]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("background/body/head/face:texture")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("8_s65m5")]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_nd8ij"]
+_data = {
+&"RESET": SubResource("Animation_20n3g"),
+&"onplay": SubResource("Animation_6wh8n"),
+&"onready": SubResource("Animation_s65m5")
+}
+
 [node name="Title Screen" type="Control" unique_id=1358526146]
 layout_mode = 3
 anchors_preset = 15
@@ -7,63 +717,259 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_qvf3b")
+metadata/_edit_use_anchors_ = true
 
-[node name="ColorRect" type="ColorRect" parent="." unique_id=1264280480]
+[node name="background" type="TextureRect" parent="." unique_id=434089546]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = -496.0
+offset_right = -496.0
 grow_horizontal = 2
 grow_vertical = 2
+texture = SubResource("CompressedTexture2D_fdtxu")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="sun" type="TextureRect" parent="background" unique_id=125919218]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = 0.00390625
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset_ratio = Vector2(0.5, 0.821)
+texture = ExtResource("2_20n3g")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="cloud" type="TextureRect" parent="background" unique_id=489672028]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = 0.00390625
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset_ratio = Vector2(0.5, 0.5)
+texture = ExtResource("3_s65m5")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="pizzabox" type="TextureRect" parent="background" unique_id=649787184]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = 0.0063476563
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset_ratio = Vector2(0.403, 0.702)
+texture = ExtResource("5_6wh8n")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="body" type="TextureRect" parent="background" unique_id=917529951]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = 0.00390625
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset_ratio = Vector2(0.738, 0.948)
+texture = ExtResource("4_nd8ij")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="head" type="TextureRect" parent="background/body" unique_id=789236545]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = -0.00024414063
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset_ratio = Vector2(0.714, 0.654)
+texture = ExtResource("7_ye11m")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="hat" type="TextureRect" parent="background/body/head" unique_id=209524244]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = -0.0036621094
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("8_wt8t8")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="face" type="TextureRect" parent="background/body/head" unique_id=1146646889]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = -0.0007324219
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("8_s65m5")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="arm" type="TextureRect" parent="background/body" unique_id=177551407]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = -0.00024414063
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset_ratio = Vector2(0.76, 0.81)
+texture = ExtResource("6_hxuq1")
+expand_mode = 1
+stretch_mode = 5
 
 [node name="ColorRect2" type="ColorRect" parent="." unique_id=1933359301]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.84996545
-anchor_top = -0.58475596
-anchor_right = 1.3272432
-anchor_bottom = 1.9283488
-offset_left = -0.00012207031
-offset_right = 1074.3252
-offset_bottom = -450.33313
+anchor_left = 0.603125
+anchor_right = 1.0
+anchor_bottom = 1.0
 grow_horizontal = 0
 grow_vertical = 2
-rotation = 0.4537856
-color = Color(0.25490198, 0, 0, 0.5921569)
+color = Color(0.16206557, 0.1620656, 0.16206557, 1)
 metadata/_edit_use_anchors_ = true
 
-[node name="PLAY" type="Button" parent="." unique_id=1703950642]
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1970001389]
 layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.6441406
-anchor_top = 0.4965278
-anchor_right = 0.8769531
-anchor_bottom = 0.61493057
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -970.0
+offset_top = -91.0
+offset_right = -44.0
+offset_bottom = 835.0
+grow_horizontal = 0
+texture = ExtResource("2_5dsjl")
+expand_mode = 1
+
+[node name="PLAY" type="TextureButton" parent="." unique_id=1644843631]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -906.0
+offset_top = -69.0
+offset_right = -106.0
+offset_bottom = 117.0
+grow_horizontal = 0
+grow_vertical = 2
+texture_normal = ExtResource("1_2mq87")
+stretch_mode = 0
+
+[node name="RichTextLabel" type="Label" parent="PLAY" unique_id=2078387832]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -84.5
+offset_top = -48.0
+offset_right = 84.5
+offset_bottom = 48.0
 grow_horizontal = 2
 grow_vertical = 2
 text = "PLAY"
-metadata/_edit_use_anchors_ = true
+label_settings = SubResource("LabelSettings_5dsjl")
 
-[node name="SETTINGS" type="Button" parent="." unique_id=1245770582]
+[node name="QUIT" type="TextureButton" parent="." unique_id=9475111]
+modulate = Color(1, 0, 0, 1)
 layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.59335935
-anchor_top = 0.6388889
-anchor_right = 0.83085936
-anchor_bottom = 0.7659722
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -906.0
+offset_top = 444.0
+offset_right = -106.0
+offset_bottom = 630.0
+grow_horizontal = 0
+grow_vertical = 2
+texture_normal = ExtResource("1_2mq87")
+stretch_mode = 0
+
+[node name="RichTextLabel" type="Label" parent="QUIT" unique_id=1945482605]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -84.0
+offset_top = -48.0
+offset_right = 84.0
+offset_bottom = 48.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "QUIT"
+label_settings = SubResource("LabelSettings_5dsjl")
+
+[node name="SETTINGS" type="TextureButton" parent="." unique_id=2046535]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -906.0
+offset_top = 185.0
+offset_right = -106.0
+offset_bottom = 371.0
+grow_horizontal = 0
+grow_vertical = 2
+texture_normal = ExtResource("1_2mq87")
+stretch_mode = 0
+
+[node name="RichTextLabel" type="Label" parent="SETTINGS" unique_id=1343400956]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -161.0
+offset_top = -48.0
+offset_right = 161.0
+offset_bottom = 48.0
 grow_horizontal = 2
 grow_vertical = 2
 text = "SETTINGS"
-metadata/_edit_use_anchors_ = true
+label_settings = SubResource("LabelSettings_5dsjl")
 
-[node name="QUIT" type="Button" parent="." unique_id=738110416]
+[node name="TransitionRect" type="ColorRect" parent="." unique_id=2070525673]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.5453125
-anchor_top = 0.79236114
-anchor_right = 0.8089844
-anchor_bottom = 0.91597223
-grow_horizontal = 0
+anchor_left = 1.0
+anchor_right = 2.0
+anchor_bottom = 1.0
+grow_horizontal = 2
 grow_vertical = 2
-text = "QUIT"
+color = Color(0.1764706, 0, 0.0627451, 1)
 metadata/_edit_use_anchors_ = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1439330876]
+libraries/ = SubResource("AnimationLibrary_nd8ij")
+
+[connection signal="pressed" from="PLAY" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="QUIT" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="SETTINGS" to="." method="_on_settings_pressed"]

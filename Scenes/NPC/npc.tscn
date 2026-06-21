@@ -1,0 +1,107 @@
+[gd_scene format=3 uid="uid://dgc1siwvv845u"]
+
+[ext_resource type="Shader" uid="uid://y0pglmw06a2x" path="res://Scenes/NPC/npc.gdshader" id="1_0s07e"]
+[ext_resource type="Texture2D" uid="uid://neq61hjedimb" path="res://Assets/obstacles/npc walk.png" id="1_3am0f"]
+[ext_resource type="Script" uid="uid://coahktfecqxj0" path="res://Scenes/NPC/npc.gd" id="1_bjna2"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_aqj1y"]
+shader = ExtResource("1_0s07e")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_0s07e"]
+shader = ExtResource("1_0s07e")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bjna2"]
+atlas = ExtResource("1_3am0f")
+region = Rect2(0, 0, 640, 640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0s07e"]
+atlas = ExtResource("1_3am0f")
+region = Rect2(640, 0, 640, 640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aqj1y"]
+atlas = ExtResource("1_3am0f")
+region = Rect2(1280, 0, 640, 640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n8r46"]
+atlas = ExtResource("1_3am0f")
+region = Rect2(1920, 0, 640, 640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fqw72"]
+atlas = ExtResource("1_3am0f")
+region = Rect2(2560, 0, 640, 640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_abh8q"]
+atlas = ExtResource("1_3am0f")
+region = Rect2(3200, 0, 640, 640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eayks"]
+atlas = ExtResource("1_3am0f")
+region = Rect2(3840, 0, 640, 640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2l1tf"]
+atlas = ExtResource("1_3am0f")
+region = Rect2(4480, 0, 640, 640)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_c4brf"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bjna2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0s07e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aqj1y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n8r46")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fqw72")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_abh8q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eayks")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2l1tf")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 6.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_e586x"]
+radius = 23.0
+height = 114.0
+
+[node name="npc" type="CharacterBody2D" unique_id=2090732807 node_paths=PackedStringArray("timer", "sprite")]
+material = SubResource("ShaderMaterial_aqj1y")
+collision_layer = 4
+collision_mask = 3
+script = ExtResource("1_bjna2")
+timer = NodePath("Timer")
+sprite = NodePath("AnimatedSprite2D")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1167734542]
+material = SubResource("ShaderMaterial_0s07e")
+scale = Vector2(0.2, 0.2)
+sprite_frames = SubResource("SpriteFrames_c4brf")
+animation = &"walk"
+frame_progress = 0.5531096
+
+[node name="Timer" type="Timer" parent="." unique_id=1972540629]
+wait_time = 5.0
+autostart = true
+
+[node name="Area2D" type="Area2D" parent="." unique_id=533465]
+scale = Vector2(0.2, 0.2)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=2045219513]
+scale = Vector2(4.9999995, 4.9999995)
+shape = SubResource("CapsuleShape2D_e586x")
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
